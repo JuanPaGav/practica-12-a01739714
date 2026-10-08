@@ -77,6 +77,9 @@ dependencies {
     implementation(libs.play.services.code.scanner)
     implementation(libs.mlkit.barcode.scanning)
     implementation(libs.kotlinx.coroutines.play.services)
+    // Pruebas locales (src/test): corren en la JVM de tu computadora, sin emulador.
+    testImplementation(libs.junit)
+    testImplementation(libs.okhttp.mockwebserver)
 
     debugImplementation(libs.androidx.ui.tooling)
 }
